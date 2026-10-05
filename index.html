@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name – Game Programmer</title>
+<meta name="description" content="Portfolio of Your Name, a gameplay and engine programmer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef7f0; --panel:#dff0e4; --line:#bcdcc6; --text:#1f3d2f; --muted:#4d6d5b;
+  --amber:#f7aabb; --rose:#a8344f; --cyan:#2b7650;
+  --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body)}
+a{color:var(--cyan)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+header.top b{font:800 1.1rem var(--display)}
+nav a{margin-left:20px;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text)}
+.hero{padding:72px 0 88px;max-width:720px}
+h1{font:800 clamp(2.6rem,6vw,4.4rem)/1.02 var(--display);margin:0 0 20px;letter-spacing:-.02em}
+.lede{color:var(--muted);max-width:46ch;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;background:var(--amber);color:var(--text);font-weight:600;text-decoration:none;border-radius:6px;margin-right:10px}
+.btn.alt{background:transparent;color:var(--text);border:2px solid var(--line)}
+section{padding:56px 0;border-top:2px solid var(--line)}
+h2{font:700 1.9rem var(--display);margin:0 0 28px}
+.proj{display:grid;grid-template-columns:200px 1fr auto;gap:24px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.proj:first-of-type{padding-top:0}
+.proj h3{font:700 1.4rem var(--display);margin:0 0 6px}
+.proj p{margin:0;color:var(--muted);max-width:60ch}
+.meta{color:var(--rose);font-weight:600;font-size:.95rem}
+.meta small{display:block;color:var(--muted);font-weight:400}
+.links a{display:block;text-align:right}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.skills h3{font:700 1.1rem var(--display);margin:0 0 8px;color:var(--cyan)}
+.skills p{margin:0;color:var(--muted)}
+footer{padding:40px 0 60px;border-top:2px solid var(--line);color:var(--muted)}
+@media(max-width:760px){
+  .hero{padding-top:32px}
+  .proj{grid-template-columns:1fr;gap:10px}
+  .links a{text-align:left}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Your Name</b>
+    <nav><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>I program the part of games you feel.</h1>
+        <p class="lede">Gameplay and engine programmer focused on responsive controls, tight systems and tools that designers enjoy using. Replace this with two sentences about you.</p>
+        <a class="btn" href="#work">See my games</a>
+        <a class="btn alt" href="https://github.com/your-username">GitHub</a>
+      </div>
+    </div>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <article class="proj">
+        <div class="meta">Project One<small>Unity · C# · 2025<br>Gameplay programmer</small></div>
+        <div><h3>Short, specific headline</h3><p>One or two sentences: what the game is, what you built (e.g. enemy AI, input buffering, netcode) and one result you can point to.</p></div>
+        <div class="links"><a href="#">Play</a><a href="#">Source</a></div>
+      </article>
+      <article class="proj">
+        <div class="meta">Project Two<small>Godot · GDScript · 2024<br>Solo developer</small></div>
+        <div><h3>Short, specific headline</h3><p>Game jam entries are welcome here. Say what the constraint was and what you shipped in the time.</p></div>
+        <div class="links"><a href="#">Play</a><a href="#">Source</a></div>
+      </article>
+      <article class="proj">
+        <div class="meta">Project Three<small>C++ · OpenGL · 2024<br>Engine programmer</small></div>
+        <div><h3>Short, specific headline</h3><p>Custom engine, renderer or tool work. Mention what it does and the technical problem you solved.</p></div>
+        <div class="links"><a href="#">Demo</a><a href="#">Source</a></div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>What I work with</h2>
+      <div class="skills">
+        <div><h3>Languages</h3><p>C++, C#, GDScript, Python, GLSL/HLSL</p></div>
+        <div><h3>Engines and tools</h3><p>Unity, Unreal, Godot, Git, Perforce, Rider</p></div>
+        <div><h3>Specialties</h3><p>Gameplay systems, AI, physics, shaders, tools</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/your-username">GitHub</a> · <a href="https://linkedin.com/in/your-username">LinkedIn</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
